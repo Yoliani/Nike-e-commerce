@@ -17,3 +17,9 @@
 
 .item-1 {
 }
+
+.banner-img {
+  height: 800px;
+  width: 800px;
+  border-radius: 400px;
+}
