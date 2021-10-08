@@ -19,7 +19,48 @@
 }
 
 .banner-img {
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 900px;
   border-radius: 400px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+
+.contenedor::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.footer-dar {
+  font-size: 13px;
 }
