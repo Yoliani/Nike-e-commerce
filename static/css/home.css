@@ -17,6 +17,10 @@
 
 .item-1 {
 }
+.foo-link {
+  color: white;
+  text-decoration: none;
+}
 
 .banner-img {
   height: 600px;
