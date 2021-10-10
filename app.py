@@ -13,7 +13,13 @@ app.config["SECRET_KEY"] = "clavesecreta"
 def index():
     return render_template("index.html")
 
-
+@app.route("/<string:seccion>") 
+def secciones(seccion): 
+    if seccion == "hombre":
+        nombre = "HOMBRES"
+    elif seccion == "hombre":
+        nombre = "HOMBRES"
+    return render_template("secciones.html", nombre = nombre )
 
 if __name__ == "__main__":  # Makes sure this is the main process
     app.run(  # Starts the site

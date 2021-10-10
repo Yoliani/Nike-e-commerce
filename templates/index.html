@@ -48,29 +48,49 @@
                 >
               </li>
               <li class="nav-item item-1">
-                <a class="nav-link active" href="#"><b>HOMBRES</b></a>
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='hombre')}}"
+                  ><b>HOMBRES</b></a
+                >
               </li>
               <li class="nav-item item-1">
-                <a class="nav-link active" href="#"><b>MUJERES</b></a>
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='mujer')}}"
+                  ><b>MUJERES</b></a
+                >
               </li>
               <li class="nav-item item-1">
-                <a class="nav-link active" href="#"><b>NIÑOS</b></a>
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='niño')}}"
+                  ><b>NIÑOS</b></a
+                >
               </li>
               <li class="nav-item item-1">
-                <a class="nav-link active" href="#"><b>DESCUENTOS</b></a>
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='descuento')}}"
+                  ><b>DESCUENTOS</b></a
+                >
               </li>
             </ul>
           </div>
-          <img
-            alt="accountCircleLine1"
-            className="img-2"
-            src="{{ url_for('static', filename='img/accountCircleLine1.svg') }}"
-          />
-          <img
-            alt="shoppingBagLine1"
-            className="img-3"
-            src="{{ url_for('static', filename='img/shoppingBagLine1.svg') }}"
-          />
+          <a>
+            <img
+              alt="accountCircleLine1"
+              className="img-2"
+              src="{{ url_for('static', filename='img/accountCircleLine1.svg') }}"
+            />
+          </a>
+          <a>
+            <img
+              alt="shoppingBagLine1"
+              className="img-3"
+              src="{{ url_for('static', filename='img/shoppingBagLine1.svg') }}"
+            />
+          </a>
         </div>
       </nav>
     </section>
