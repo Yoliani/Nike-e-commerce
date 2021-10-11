@@ -34,6 +34,10 @@ def secciones(seccion):
         return render_template("secciones.html", nombre=nombre)
 
 
+@app.route("/productos/<string:seccion>") 
+def productos(seccion): 
+  return render_template("productos.html", data = seccion)
+
 @app.route('/error')
 def error():
     return render_template("error.html")
