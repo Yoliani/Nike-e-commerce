@@ -38,7 +38,9 @@ def secciones(seccion):
 def login():
     return render_template("login.html")
 
-
+@app.route('/register') 
+def register():
+    return render_template('registro.html')
 @app.route('/carrito')
 def carrito():
     return render_template("carrito.html")
