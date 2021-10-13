@@ -34,11 +34,12 @@
     <section class="NavBar">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <img
-            alt="logoNIKE1"
-            className="img-1"
-            src="{{ url_for('static', filename='img/logoNIKE1.svg') }}"
-          />
+          <a href="{{url_for('index')}}">
+            <img
+              alt="logoNIKE1"
+              className="img-1"
+              src="{{ url_for('static', filename='img/logoNIKE1.svg') }}"
+          /></a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
@@ -76,14 +77,14 @@
               </li>
             </ul>
           </div>
-          <a>
+          <a href="{{url_for('login')}}">
             <img
               alt="accountCircleLine1"
               className="img-2"
               src="{{ url_for('static', filename='img/accountCircleLine1.svg') }}"
             />
           </a>
-          <a href="#">
+          <a href="{{url_for('carrito')}}">
             <img
               alt="shoppingBagLine1"
               className="img-3"
