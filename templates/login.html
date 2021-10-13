@@ -8,28 +8,27 @@
     <link
       rel="shortcut icon"
       href="{{ url_for('static', filename='img/logoNIKE1.svg') }}"
-    />
+      />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css"
-    />
+      />
     <link
       href="{{ url_for('static', filename='css/home.css') }}"
       rel="stylesheet"
-    />
+      />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
       crossorigin="anonymous"
-    />
+      />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </head>
-  <body  class="contenedor" style="font-family: 'Fira Code', monospace">
+  <body class="contenedor" style="font-family: 'Fira Code', monospace">
     <!----NavBar-->
     <section class="NavBar">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,41 +38,31 @@
               alt="logoNIKE1"
               className="img-1"
               src="{{ url_for('static', filename='img/logoNIKE1.svg') }}"
-          /></a>
+              /></a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  ><b>NOVEDADES</b></a
-                >
+                <a class="nav-link active" aria-current="page" href="#"><b>NOVEDADES</b></a>
               </li>
               <li class="nav-item item-1">
                 <a
                   class="nav-link active"
-                  href="{{url_for('secciones', seccion='hombre')}}"
-                  ><b>HOMBRES</b></a
-                >
+                  href="{{url_for('secciones', seccion='hombre')}}"><b>HOMBRES</b></a>
               </li>
               <li class="nav-item item-1">
                 <a
                   class="nav-link active"
-                  href="{{url_for('secciones', seccion='mujer')}}"
-                  ><b>MUJERES</b></a
-                >
+                  href="{{url_for('secciones', seccion='mujer')}}"><b>MUJERES</b></a>
               </li>
               <li class="nav-item item-1">
                 <a
                   class="nav-link active"
-                  href="{{url_for('secciones', seccion='niño')}}"
-                  ><b>NIÑOS</b></a
-                >
+                  href="{{url_for('secciones', seccion='niño')}}"><b>NIÑOS</b></a>
               </li>
               <li class="nav-item item-1">
                 <a
                   class="nav-link active"
-                  href="{{url_for('secciones', seccion='descuento')}}"
-                  ><b>DESCUENTOS</b></a
-                >
+                  href="{{url_for('secciones', seccion='descuento')}}"><b>DESCUENTOS</b></a>
               </li>
             </ul>
           </div>
@@ -81,15 +70,16 @@
             <img
               alt="accountCircleLine1"
               className="img-2"
-              src="{{ url_for('static', filename='img/accountCircleLine1.svg') }}"
-            />
+              src="{{ url_for('static', filename='img/accountCircleLine1.svg')
+              }}"
+              />
           </a>
           <a href="{{url_for('carrito')}}">
             <img
               alt="shoppingBagLine1"
               className="img-3"
               src="{{ url_for('static', filename='img/shoppingBagLine1.svg') }}"
-            />
+              />
           </a>
         </div>
       </nav>
@@ -102,79 +92,79 @@
           <br /><br /><br />
           <img
             src="{{ url_for('static', filename='img/logoNIKE1.svg') }}"
-          />
-       <br/> 
-          <h3>Just do it!</h3>
-          <br />
-        <br/> <br/> 
-          <form>
-            <input type="text" placeholder="Correo electronico" /> <br />
+            />
+          <br/>
+            <h3>Just do it!</h3>
             <br />
-            <input type="password" placeholder="Contraseña" /> <br />
-            <br />
-            <input type="checkbox" />
-            <label for="Check manetner sesión iniciada"
-              >Mantener sesión iniciada</label
-            >
-            <br />
-            <br />
-            <input type="submit" value="Iniciar sesion" />
-            <br /><br />
-            <a href="http://">Contraseña olvidada</a> <br />
-            <br />
-            <label>¿No eres miembro?</label> <a href="{{url_for('register')}}">Unirse</a><br />
-            <br style="line-height: 200%;" />
-        </center>
-      </div>
-    </section>
+            <br/> <br/>
+                <form>
+                  <input type="text" placeholder="Correo electronico" /> <br />
+                  <br />
+                  <input type="password" placeholder="Contraseña" /> <br />
+                  <br />
+                  <input type="checkbox" />
+                  <label for="Check manetner sesión iniciada">Mantener sesión
+                    iniciada</label>
+                  <br />
+                  <br />
+                  <input type="submit" value="Iniciar sesion" />
+                  <br /><br />
+                  <a href="http://">Contraseña olvidada</a> <br />
+                  <br />
+                  <label>¿No eres miembro?</label> <a
+                    href="{{url_for('register')}}">Unirse</a><br />
+                  <br style="line-height: 200%;" />
+                </center>
+              </div>
+            </section>
 
-    <!--Footer-->
-    <section class="foo">
-      <footer class="footer-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-3 item">
-              <h3 class="footer-dar">
-                <a class="foo-link" href="#">Tarjetas de regalo</a>
-              </h3>
-              <br />
-              <h3 class="footer-dar">
-                <a class="foo-link" href="#">Promociones</a>
-              </h3>
-              <br />
-              <h3 class="footer-dar">
-                <a class="foo-link" href="#">Iniciar sesion por correo</a>
-              </h3>
-              <br />
-              <h3 class="footer-dar">
-                <a class="foo-link" href="#">Convertirse en un miembro</a>
-              </h3>
-              <br />
-              <h3 class="footer-dar">
-                <a class="foo-link" href="#">Danos tu opinion</a>
-              </h3>
-            </div>
-            <div class="col-md-6 col-md-3 item text">
-              <h3 class="footer-dar">
-                <a class="foo-link" href="#">Ver orden</a>
-              </h3>
-              <br />
-              <h3 class="footer-dar">
-                <a class="foo-link" href="#">Contactanos</a>
-              </h3>
-              <br />
-            </div>
-            <div class="col item social">
-              <a href="#"><i class="icon ion-social-facebook"></i></a
-              ><a href="#"><i class="icon ion-social-twitter"></i></a
-              ><a href="#"><i class="icon ion-social-snapchat"></i></a
-              ><a href="#"><i class="icon ion-social-instagram"></i></a>
-            </div>
-          </div>
-          <br />
-          <p class="copyright">Nike © 2021</p>
-        </div>
-      </footer>
-    </section>
-  </body>
-</html>
+            <!--Footer-->
+            <section class="foo">
+              <footer class="footer-dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                      <h3 class="footer-dar">
+                        <a class="foo-link" href="#">Tarjetas de regalo</a>
+                      </h3>
+                      <br />
+                      <h3 class="footer-dar">
+                        <a class="foo-link" href="#">Promociones</a>
+                      </h3>
+                      <br />
+                      <h3 class="footer-dar">
+                        <a class="foo-link" href="#">Iniciar sesion por correo</a>
+                      </h3>
+                      <br />
+                      <h3 class="footer-dar">
+                        <a class="foo-link" href="#">Convertirse en un miembro</a>
+                      </h3>
+                      <br />
+                      <h3 class="footer-dar">
+                        <a class="foo-link" href="#">Danos tu opinion</a>
+                      </h3>
+                    </div>
+                    <div class="col-md-6 col-md-3 item text">
+                      <h3 class="footer-dar">
+                        <a class="foo-link" href="#">Ver orden</a>
+                      </h3>
+                      <br />
+                      <h3 class="footer-dar">
+                        <a class="foo-link" href="#">Contactanos</a>
+                      </h3>
+                      <br />
+                    </div>
+                    <div class="col item social">
+                      <a href="#"><i class="icon ion-social-facebook"></i></a><a
+                        href="#"><i class="icon ion-social-twitter"></i></a><a
+                        href="#"><i class="icon ion-social-snapchat"></i></a><a
+                        href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+                  </div>
+                  <br />
+                  <p class="copyright">Nike © 2021</p>
+                </div>
+              </footer>
+            </section>
+          </body>
+        </html>
