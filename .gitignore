@@ -1,1 +1,5 @@
 #Replit
+*.php-cs-fixer.cache
+*.replit
+*.toml
+*.lock
