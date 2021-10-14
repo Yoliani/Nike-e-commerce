@@ -1,6 +1,6 @@
 import os
 from glob import glob
-
+import random
 from flask import Flask, render_template, request
 from flask.helpers import url_for
 from werkzeug.utils import redirect
@@ -80,7 +80,5 @@ if __name__ == "__main__":  # Makes sure this is the main process
     app.run(  # Starts the site
         debug=True,
         host='0.0.0.0',  # EStablishes the host, required for repl to detect the site
-        port=5000
-        # random.randint(
-        # 2000, 9000)  # Randomly select the port the machine hosts on.
+        port=random.randint(2000, 9000)  # Randomly select the port the machine hosts on.
     )
