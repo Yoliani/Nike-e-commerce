@@ -77,11 +77,12 @@
               </li>
             </ul>
           </div>
-          <a href="{{ url_for('iniciodesesion') }}">
+          <a href="{{url_for('register')}}">
             <img
               alt="accountCircleLine1"
               className="img-2"
-              src="{{ url_for('static', filename='img/accountCircleLine1.svg') }}"
+              src="{{ url_for('static', filename='img/accountCircleLine1.svg')
+              }}"
             />
           </a>
           <a href="{{url_for('carrito')}}">
@@ -94,36 +95,45 @@
         </div>
       </nav>
     </section>
-    <!---Prueba-->
-    <!---Inicio-->
-    <section clas="landing">
-      <div class="row">
-        <div class="col-md-6">
-          <br /><br /><br /><br />
-          <br /><br /><br /><br />
-          <h1 style="font-size: 80px; text-align: center">Hazte imparable</h1>
+
+    <section>
+      <div class="login-box">
+        <center>
+          <h1>Login</h1>
+          <br /><br /><br />
+          <img src="{{ url_for('static', filename='img/logoNIKE1.svg') }}" />
+          <br />
+          <h3>Just do it!</h3>
           <br />
           <br />
           <br />
-          <p style="font-size: 30px; text-align: center">
-            El éxito no se da, se gana. En la pista, en el campo, en el
-            gimnasio.<br />
-            Con sangre, sudor y lágrimas ocasionales.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <br />
-          <br />
-          <br />
-          <img
-            src="{{ url_for('static', filename='img/Nike-B.gif') }}"
-            alt=""
-            class="banner-img"
-          />
-        </div>
+          <form
+            name="loginForm"
+            method="POST"
+            action="{{url_for('iniciodesesion')}}"
+          >
+            <input type="text" placeholder="Correo electronico" /> <br />
+            <br />
+            <input type="password" placeholder="Contraseña" /> <br />
+            <br />
+            <input type="checkbox" />
+            <label for="Check manetner sesión iniciada"
+              >Mantener sesión iniciada</label
+            >
+            <br />
+            <br />
+            <input type="submit" value="Iniciar sesion" />
+            <br /><br />
+            <a href="">Contraseña olvidada</a> <br />
+            <br />
+            <label>¿No eres miembro?</label>
+            <a href="{{url_for('register')}}">Unirse</a><br />
+            <br style="line-height: 200%" />
+          </form>
+        </center>
       </div>
     </section>
-    <br /><br /><br />
+
     <!--Footer-->
     <section class="foo">
       <footer class="footer-dark">
