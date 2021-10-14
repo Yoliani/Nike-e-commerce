@@ -49,6 +49,9 @@ def secciones(seccion):
 def carrito():
     return render_template("carrito.html")
 
+app.route('/productos/<string:seccion>')
+def productoporseccion(seccion): 
+  return render_template('productos.html', seccion = seccion)
 
 @app.route("/productos/<string:seccion>")
 def productos(seccion):

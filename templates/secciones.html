@@ -31,6 +31,114 @@
     ></script>
   </head>
   <body>
-    <h1>{{nombre}}</h1>
+    <!----NavBar-->
+    <section class="NavBar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="{{url_for('index')}}">
+            <img
+              alt="logoNIKE1"
+              className="img-1"
+              src="{{ url_for('static', filename='img/logoNIKE1.svg') }}"
+          /></a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><b>NOVEDADES</b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='hombre')}}"
+                  ><b>HOMBRES</b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='mujer')}}"
+                  ><b>MUJERES</b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='niño')}}"
+                  ><b>NIÑOS</b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('secciones', seccion='descuento')}}"
+                  ><b>DESCUENTOS</b></a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="{{ url_for('iniciodesesion') }}">
+            <img
+              alt="accountCircleLine1"
+              className="img-2"
+              src="{{ url_for('static', filename='img/accountCircleLine1.svg') }}"
+            />
+          </a>
+          <a href="{{url_for('carrito')}}">
+            <img
+              alt="shoppingBagLine1"
+              className="img-3"
+              src="{{ url_for('static', filename='img/shoppingBagLine1.svg') }}"
+            />
+          </a>
+        </div>
+      </nav>
+    </section>
+    <br /><br />
+    <!--sECCIUON-->
+    <section class="NavBar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><b>{{nombre}}</b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('productos', seccion='hombre')}}"
+                  ><b>ZAPATOS </b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('productos', seccion='mujer')}}"
+                  ><b>ROPA</b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('productos', seccion='niño')}}"
+                  ><b>GORRAS</b></a
+                >
+              </li>
+              <li class="nav-item item-1">
+                <a
+                  class="nav-link active"
+                  href="{{url_for('productos', seccion='descuento')}}"
+                  ><b>DESCUENTOS</b></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
   </body>
 </html>
