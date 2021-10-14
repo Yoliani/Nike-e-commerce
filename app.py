@@ -28,6 +28,7 @@ def register():
 
 @app.route("/seccion/<string:seccion>")
 def secciones(seccion):
+	rutas_imagenes = None
     print(seccion)
     nombre = None
     if seccion == "hombre":
